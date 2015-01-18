@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#565557"
+    android:padding="36dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/edit_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#e3e3e3"
+        android:drawableLeft="@drawable/icon_tel"
+        android:hint="@string/hint_input_tel"
+        android:inputType="phone"
+        android:paddingBottom="6dp"
+        android:paddingTop="8dp" />
+
+    <EditText
+        android:id="@+id/edit_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_tel"
+        android:layout_marginTop="10dp"
+        android:background="#e3e3e3"
+        android:drawableLeft="@drawable/icon_passwd"
+        android:hint="@string/hint_input_passwd"
+        android:inputType="textPassword"
+        android:paddingBottom="6dp"
+        android:paddingTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/cb_auto_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edit_passwd"
+        android:layout_below="@+id/edit_passwd"
+        android:layout_marginTop="12dp"
+        android:button="@drawable/checkbox_button"
+        android:text="@string/auto_login"
+        android:textColor="@color/text_white" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/cb_auto_login"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/cb_auto_login"
+        android:background="@drawable/btn_forget_passwd"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/btn_forgot_passwd"
+        android:textColor="@color/text_gray" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="108dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/cb_auto_login"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_blue"
+        android:text="@string/btn_login"
+        android:textColor="@color/text_white" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="108dp"
+        android:layout_height="36dp"
+        android:layout_alignRight="@+id/edit_passwd"
+        android:layout_below="@+id/cb_auto_login"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_red"
+        android:text="@string/btn_reg"
+        android:textColor="@color/text_white" />
+
+</RelativeLayout>
