@@ -1,13 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Sos</string>
     <string name="hello_world">Hello world!</string>
     <string name="hint_input_tel">输入手机号</string>
-	<string name="hint_input_passwd">输入密码</string>
-	
-	<string name="btn_forgot_passwd">忘记密码？</string>
-	<string name="auto_login">下次自动登录</string>
-	<string name="btn_login">登录</string>
-	<string name="btn_reg">注册</string>
+    <string name="hint_input_passwd">输入密码</string>
+    <string name="btn_forgot_passwd">忘记密码？</string>
+    <string name="auto_login">下次自动登录</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_reg">注册</string>
+    <string name="app_name">安全宝</string>
+    <string name="notification_content">触摸可启动安全宝</string>
+    <string name="sure">确定</string>
+    <string name="sure_exit">确认退出吗？</string>
+    <string name="cancel">取消</string>
+    <string name="prompt">提示</string>
+    <string name="check_update">正在检测更新</string>
+    <string name="loadding">正在加载……</string>
+    <string name="share_text">安全宝</string>
+    <string name="logining">正在登录…</string>
+    <string name="problem">问题/建议</string>
+    <string name="retry">重试</string>
+    <string name="all_friends">已有联系人</string>
+    <string name="add_friend">添加联系人</string>
+    <string name="author">Richard Fan</string>
+    <string name="for_friends_help_info1">备注：如不填写短语描述，系统默认内容为</string>
+    <string name="for_friends_help_info2">“我遇到紧急情况，需要帮助”。</string>
+    <string name="for_friends_help_info3">您的GPS定位信息，会连同短信一起发送。</string>
+    <string name="record">录音/视频时间</string>
+    <string name="min_progress">0</string>
+    <string name="max_progress">60</string>
+    <string name="min">25秒</string>
+    <string name="location_error">定位失败</string>
+    <string name="locationing">正在定位</string>
+    <string name="session">会话</string>
+    <string name="address_list">通讯录</string>
+    <string name="set">设置</string>
+    <string name="text_ack_msg">已读</string>
+    <string name="text_delivered_msg">送达</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="button_send">发送</string>
+    <string name="attach_smile">表情</string>
+    <string name="attach_picture">图片</string>
+    <string name="attach_take_pic">拍照</string>
+    <string name="attach_location">位置</string>
+    <string name="attach_file">文件</string>
+    <string name="attach_voice_call">语音电话</string>
+    <string name="user_card">名片</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="send_fail">发送消息失败,</string>
+    <string name="delete_message">删除消息</string>
+    <string name="copy_message">复制消息</string>
+    <string name="delete_voice">删除语音</string>
+    <string name="delete_video">删除视频</string>
+    <string name="delete">删除</string>
+    <string name="resend">重发</string>
+    <string name="confirm_resend">确认重发该信息？</string>
+    <string name="connect_failuer_toast">请检查网络或稍候重试</string>
+    <string name="network_unavailable">网络连接不可用，请检查网络</string>
+    <string name="copy">复制</string>
+    <string name="forward">转发</string>
+    <string name="button_logout">退出登录</string>
+    <string name="button_uploadlog">上传运行日志</string>
+    <string name="ok">确定</string>
+    <string name="clear_records">清空记录</string>
+    <string name="clear_all_records">是否清空所有聊天记录？</string>
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_message">位置信息</string>
+    <string name="recording_video">录制视频</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="voice">[语音]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_save">保存</string>
+    <string name="button_search">查找</string>
+    <string name="button_add">添加</string>
+    <string name="search_header">S</string>
+    <string name="network_isnot_available">网络不可用</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="select_contacts">选择联系人</string>
+    <string name="confirm_forward_to">确定转发到：%1$s ?</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_hint">退出后不会删除任何历史数据，下次登录依然可以使用本账号</string>
+    <string name="exit_group_hint">退出后，将不再接收此群聊信息</string>
+    <string name="dissolution_group_hint">退出后，此群将被解散</string>
+    <string name="exit_group">退出</string>
+    <string name="connect_conflict">同一帐号已在其他设备登录</string>
+
+    <!-- login -->
+    <string name="tel_is_null">请输入手机号码</string>
+    <string name="passwd_is_null">请输入密码</string>
+    <string name="repasswd_is_null">请再次输入密码</string>
+    <string name="verify_is_null">请输入验证码</string>
+    <string name="recv_verify">收到验证码</string>
+    <string name="pwds_not_the_same">两次输入密码不一致</string>
+    <string name="authorize_failed">请输入正确的电话和密码</string>
+    <string name="register_failed">注册失败：</string>
+    <string name="request_failed">请求失败：</string>
+    <string name="connect_failed">无法连接到服务器</string>
+    <string name="second">秒</string>
+    <string name="already_confirm_account">已经验证账户：</string>
+    <string name="please_input_new_pwd">请重新填写新密码</string>
+
+    <!-- alarm -->
+    <string name="select_alarm_method">选择报警方式</string>
+    <string name="alarm_sending">报警求助录音/视频发送中......&#160;&#160;</string>
+    <string name="sound_recoding">音频录制中......</string>
+    <string name="video_recoding">视频录制中......</string>
+    <string name="count_down">倒计时</string>
+    <string name="description_word">短语描述......</string>
+    <string name="video_record_tips">请将摄像头对准报警对象\n请保持稳定，勿快速晃动。</string>
+    <string name="alarm_confirm_tips">举报人您好：\n您所举报的事件属实\n虚报愿承担法律责任！</string>
+    <string name="add_friends_tips">未添加亲友！\n请先添加求助用亲友列表。</string>
+    <string name="for_help_confirm_tips">请珍惜：\n您每一次获得帮助的机会！\n是否向亲友发送求救信息？</string>
+    <string name="alarm_confirm">是否继续摄录报警信息？</string>
+    <string name="send_success">发送成功</string>
+    <string name="send_failure">发送失败</string>
+    <string name="check_network">请检查网络是否已连接......</string>
+
+    <!-- button -->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="send_verify">发送验证码</string>
+    <string name="submit_verify">提交验证</string>
+    <string name="automatic_login">下次自动登录</string>
+    <string name="submit">提交</string>
+    <string name="start_recode">开始录制</string>
+    <string name="send">发送</string>
+    <string name="conti">继续</string>
+    <string name="bus">公交站</string>
+    <string name="train">火车票代售点</string>
+    <string name="coach">长途汽车站</string>
+    <string name="metro">地铁站</string>
+    <string name="plane">机场</string>
+    <string name="park">停车场</string>
+    <string name="taxi">打的</string>
+    <string name="gas">加油站</string>
+    <string name="link_up">在线沟通</string>
+    <string name="datum">完善个人信息便于救助</string>
+    <string name="power">连续按电源键两次启动</string>
+    <string name="root">允许获得手机最高权限</string>
+    <string name="about">关于安全宝</string>
+    <string name="state">法律申明</string>
+    <string name="collect">我的收藏</string>
+    <string name="feedback">意见反馈</string>
+    <string name="update">检测更新</string>
+    <string name="recommend">应用推荐</string>
+
+    <!-- title -->
+    <string name="login_title">用户登录</string>
+    <string name="install_title">设置</string>
+    <string name="share_title">分享</string>
+    <string name="circle_title">生活圈</string>
+    <string name="traffic_title">交通查询</string>
+    <string name="register_title">用户注册</string>
+    <string name="forget_title">忘记密码</string>
+    <string name="reset_title">重设密码</string>
+    <string name="feedback_title">意见反馈</string>
+    <string name="about_title">关于安全宝</string>
+    <string name="law_title">法律申明</string>
+    <string name="apply_title">应用推荐</string>
+    <string name="collect_title">我的收藏</string>
+    <string name="link_title">在线沟通</string>
+
+    <!-- hint -->
+    <string name="input_mobile">输入手机号</string>
+    <string name="input_mobile_verbose">请输入11位手机号码</string>
+    <string name="input_new_pwd">输入6位以上新密码</string>
+    <string name="input_pwd_again">重新输入一次</string>
+    <string name="input_pwd">输入密码</string>
+    <string name="input_verify">输入验证码</string>
+    <string name="input_verify_verbose">请输入6位验证码</string>
+    <string name="reinput_pwd">确认密码</string>
+    <string name="input_feedback">说点什么吧！</string>
+
+    <!-- tost -->
+    <string name="input_tel">请输入手机号</string>
+    <string name="verify_error">验证码错误，请重新输入</string>
+    <string name="send_scc">验证码已发送到您手机上，请注意查收</string>
+    <string name="register_scc">恭喜您，注册成功</string>
+    <string name="tel_error">手机号格式错误，请重新输入</string>
+    <string name="login_error">用户名或密码错误</string>
+    <string name="login_scc">登录成功</string>
+    <string name="get_verify">请先获取验证码</string>
+    <string name="password_length">请输入至少6位密码</string>
+    <string name="password_update_scc">密码修改成功，请重新登录</string>
+    <string name="login_failure">登录失败，请重新登录</string>
+
+    <!-- 生活圈 -->
+    <string name="cate">美食</string>
+    <string name="tavern">酒店</string>
+    <string name="leisure">休闲娱乐</string>
+    <string name="life">生活服务</string>
+    <string name="feature">特色推荐</string>
+
 </resources>

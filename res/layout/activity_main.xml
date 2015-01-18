@@ -2,11 +2,127 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    android:background="#352e2b"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    tools:context=".MainActivity" >
 
-    <TextView
+    <ImageView
+        android:id="@+id/iv_app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="58dp"
+        android:src="@drawable/iv_app_name" />
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_below="@id/iv_app_name"
+        android:background="@drawable/round_bk" >
+
+        <ImageButton
+            android:id="@+id/ib_sos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#0000"
+            android:scaleType="fitXY"
+            android:src="@drawable/sos_btn" />
+
+        <ImageButton
+            android:id="@+id/ib_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:background="#0000"
+            android:src="@drawable/location" />
+
+        <ImageButton
+            android:id="@+id/ib_share"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="48dp"
+            android:background="#0000"
+            android:src="@drawable/share" />
+
+        <CheckBox
+            android:id="@+id/cb_122"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:button="@drawable/s122"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/cb_119"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="48dp"
+            android:layout_marginRight="48dp"
+            android:button="@drawable/s119"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/cb_120"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6dp"
+            android:button="@drawable/s120"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/cb_110"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="48dp"
+            android:layout_marginLeft="48dp"
+            android:button="@drawable/s110"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/cb_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:button="@drawable/friends"
+            android:checked="true" />
+        
+        <ImageButton
+            android:id="@+id/ib_railway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="48dp"
+            android:background="#0000"
+            android:src="@drawable/railway" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_container"
+        android:src="@drawable/round_shadow"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

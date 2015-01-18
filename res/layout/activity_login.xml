@@ -6,7 +6,7 @@
     android:padding="36dp"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <EditText
+    <com.richard.sos.views.DelBtnEditText
         android:id="@+id/edit_tel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,11 +14,9 @@
         android:background="#e3e3e3"
         android:drawableLeft="@drawable/icon_tel"
         android:hint="@string/hint_input_tel"
-        android:inputType="phone"
-        android:paddingBottom="6dp"
-        android:paddingTop="8dp" />
+        android:inputType="phone" />
 
-    <EditText
+    <com.richard.sos.views.DelBtnEditText
         android:id="@+id/edit_passwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,9 +25,7 @@
         android:background="#e3e3e3"
         android:drawableLeft="@drawable/icon_passwd"
         android:hint="@string/hint_input_passwd"
-        android:inputType="textPassword"
-        android:paddingBottom="6dp"
-        android:paddingTop="8dp" />
+        android:inputType="textPassword" />
 
     <CheckBox
         android:id="@+id/cb_auto_login"

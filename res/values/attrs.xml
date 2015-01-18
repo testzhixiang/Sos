@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DelBtnEditText">
+        <attr name="android:inputType" />
+        <attr name="android:background" />
+        <attr name="android:drawableLeft" />
+        <attr name="android:hint" />
+    </declare-styleable>
+    <declare-styleable name="RotationTable">
+
+        <!-- 设置旋转圆桌第一张Cake的图片 -->
+        <attr name="firstCake" format="reference" />
+        <!-- 设置旋转圆桌中间Cake的图片 -->
+        <attr name="centerCake" format="reference" />
+        <!-- 设置旋转圆桌周围Cake的图片数量 -->
+        <attr name="numberOfCake" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CompoundButton">
+        <attr name="android:button" />
+    </declare-styleable>
+
+</resources>
