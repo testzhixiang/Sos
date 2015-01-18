@@ -23,6 +23,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 		mEditTel = (DelBtnEditText) findViewById(R.id.edit_tel);
 		mEditPasswd = (DelBtnEditText) findViewById(R.id.edit_passwd);
 		mBtnLogin = (Button) findViewById(R.id.btn_login);
+		mBtnLogin.setOnClickListener(this);
 	}
 
 	@Override
